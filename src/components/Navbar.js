@@ -15,7 +15,7 @@ function Navbar() {
     const a = useContext(ModeContext);
 
     return (
-        <nav className={`navbar navbar-expand-lg fixed-top navbar-${a.mode === "light" ? "light" : "dark"} bg-${a.mode === "light" ? "light" : "dark"}`}>
+        <nav className={`navbar navbar-expand-lg fixed-top navbar-${a.mode === "light" ? "light" : "dark"} bg-${a.mode === "light" ? "light" : "dark"} border-bottom border-${a.mode==="light"?"dark":"light"}`}>
             <div className="container-fluid">
                 <Link className="navbar-brand" to="/">News 24/7</Link>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">

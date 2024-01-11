@@ -3,7 +3,7 @@ import ModeContext from "./ModeContext";
 
 const ModeState = (props) => {
 
-    const [mode, setMode] = useState("dark");
+    const [mode, setMode] = useState("light");
 
     function toggleMode (){
         if(mode === "light"){
